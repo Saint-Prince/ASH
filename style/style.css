@@ -6,24 +6,68 @@
   box-sizing: border-box;
 }
 /* a tag general style */
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 /* Raleway font section */
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Medium.ttf");
-  font-weight:500;
+  font-weight: 500;
 }
 /* Helvetica font section */
 @font-face {
-    font-family: "Helvetica";
-    src: url("../fonts/Helvetica.ttf");
-    font-weight: 500;
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf");
+  font-weight: 500;
 }
 /* body section */
-body{
-    font-family: "Raleway", "Helvetica", sans-serif;
-    color: #444;
+body {
+  font-family: "Raleway", "Helvetica", sans-serif;
+  color: #444;
+  background-color: lightskyblue;
+}
+/* Header Section */
+.header {
+  width: 100%;
+  height: 100px;
+  border: 1px solid red;
+}
+.top-menu {
+  width: 100%;
+  border: 2px solid green;
+  height: 100%;
+  padding: 40px;
+}
+.top-menu > h2 {
+  color: #fff;
+  float: left;
+}
+.nav-menu {
+  text-align: right;
+}
+.nav-menu > ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+.nav-menu > ul > li > a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+.top-menu .sign-up {
+  font-size: 18px;
+  width: 100px;
+  height: 35px;
+  padding: 6px;
+  border-radius: 18px;
+  text-align: center;
+  background-color: lightcoral;
+}
+.top-menu .sign-up ul {
+  margin-bottom: 10px;
+}
+/* nav menu hover */
+.nav-menu ul li a:hover {
+  color: #ffffff;
 }

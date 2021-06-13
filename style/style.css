@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* a tag general style */
+a{
+    text-decoration: none;
+    color: #fff;
+}
 /* Raleway font section */
 @font-face {
   font-family: "Raleway";
@@ -17,4 +22,8 @@
     src: url("../fonts/Helvetica.ttf");
     font-weight: 500;
 }
-
+/* body section */
+body{
+    font-family: "Raleway", "Helvetica", sans-serif;
+    color: #444;
+}

@@ -26,48 +26,85 @@ a {
 body {
   font-family: "Raleway", "Helvetica", sans-serif;
   color: #444;
-  background-color: lightskyblue;
 }
 /* Header Section */
 .header {
   width: 100%;
-  height: 100px;
-  border: 1px solid red;
+  height: 100vh;
+  background-image: url("../img/dark_tint.png"),
+    url("../img/bokeh_car_lights_bg.jpg");
 }
 .top-menu {
   width: 100%;
   border: 2px solid green;
-  height: 100%;
+  height: 100px;
   padding: 40px;
 }
 .top-menu > h2 {
   color: #fff;
   float: left;
+  padding: 5px 0px;
 }
 .nav-menu {
   text-align: right;
 }
 .nav-menu > ul li {
-  display: inline-block;
+  display: inline;
   padding: 5px 15px;
 }
 .nav-menu > ul > li > a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s ease-in-out;
 }
-.top-menu .sign-up {
-  font-size: 18px;
-  width: 100px;
-  height: 35px;
-  padding: 6px;
-  border-radius: 18px;
+.btn {
+  padding: 9px 25px;
+  border-radius: 30px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
   text-align: center;
-  background-color: lightcoral;
+  font-size: 1.5vw;
 }
-.top-menu .sign-up ul {
-  margin-bottom: 10px;
+.btn-gray {
+  background-color: #fff;
+  color: #444 !important;
+}
+.btn-big {
+  font-size: 2.5vw;
+}
+.btn-blue {
+  background-color: #3cadd4 !important;
+  color: #fff;
+  border: none;
+}
+.btn-dark {
+  background-color: #383b43;
 }
 /* nav menu hover */
 .nav-menu ul li a:hover {
   color: #ffffff;
+}
+/* end of nav menu */
+/* banner content Section */
+.banner-content {
+  text-align: center;
+  padding: 90px 0px;
+}
+.banner-text {
+  line-height: 110px 0px 0px 0px;
+  font-size: 5vw;
+  color: #fff;
+  font-weight: bold;
+}
+.banner-text ~ p {
+  color: #fff;
+  font-size: 2vw;
+  
+}
+.banner-button {
+  font-size: 2vw;
+  width: 25vw;
+  height: 40px;
+  border-radius: 18px;
+  margin: 30px 0;
 }

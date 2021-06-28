@@ -297,14 +297,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-color: #3cadd4;
   color: #fff;
-  justify-content: stretch;
+  align-items: center;
 }
 .header-txt {
   text-align: center;
-  align-self: center;
   font-weight: 300;
   font-size: 18px;
   padding: 50px 0px;
@@ -315,7 +314,6 @@ body {
   font-size: 35px;
 }
 .contact-inp {
-  align-self: center;
   width: 55%;
   height: 45%;
   color: #444;
@@ -330,19 +328,36 @@ body {
   background: #ffffff;
 }
 .comment {
-  padding: 20px 4px;
+  padding: 20px 5px;
   color: #383b43;
 }
 .comment > textarea {
   padding: 5px 16px;
   font-family:inherit;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .contact a:last-of-type{
-  align-self: center;
   width:17%;
   height: 9%;
   border-radius: 20px;
   text-align: center;
   padding: 12px 0;
+}
+/* end of contact section */
+/* footer section */
+.footer{
+  background-color: #444;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}.footer ul{
+  align-self: center;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #858585;
 }

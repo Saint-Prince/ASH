@@ -289,7 +289,6 @@ body {
 /* team button seciton */
 .team-btn {
   width: 20%;
-  height: 9%;
   border-radius: 28px;
   align-self: center;
   text-align: center;
@@ -340,6 +339,11 @@ textarea {
 }
 .contact-inp button {
   margin-top: 20px;
+}
+::placeholder {
+  color: #858585!important;
+  font-size: 15px;
+  font-family: "Raleway";
 }
 /* end of contact section */
 /* footer section */

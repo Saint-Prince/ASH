@@ -31,11 +31,10 @@ body {
 }
 /* Header Section */
 .header {
-  width: 100%;
-  height: 100vh;
   background-image: url("../img/dark_tint.png"),
     url("../img/bokeh_car_lights_bg.jpg");
   background-position: center;
+  background-size: cover;
 }
 .top-menu {
   width: 100%;
@@ -71,17 +70,22 @@ body {
   background-color: #fff;
   color: #444 !important;
 }
-.btn-big {
-  font-size: 2.5vw;
-}
+
 .btn-blue {
-  background-color: #3cadd4 !important;
-  color: #fff;
-  border: none;
+  background-color: #3cadd4;
+  color: #fff !important;
 }
+
 .btn-dark {
   background-color: #383b43;
+  color: #ffffff !important;
 }
+
+.btn-big {
+  font-size: 20px !important;
+  padding: 17px 35px;
+}
+
 /* nav menu hover */
 .nav-menu ul li a:hover {
   color: #ffffff;
@@ -93,20 +97,24 @@ body {
   padding: 90px 0px;
 }
 .banner-text {
-  line-height: 110px 0px 0px 0px;
-  font-size: 5vw;
+  line-height: 130px;
+  font-size: 60px;
   color: #fff;
   font-weight: bold;
 }
 .banner-text ~ p {
   color: #fff;
-  font-size: 2vw;
+  font-size: 22px;
 }
 .banner-button {
-  font-size: 2vw;
-  width: 25vw;
-  height: 40px;
-  border-radius: 18px;
+  padding: 17px 35px;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Raleway";
   margin: 30px 0;
 }
 /* end of header and banenr section */
@@ -146,7 +154,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   width: 25%;
-  height: 100%;
   background-color: #fff;
   margin: 0px 30px;
 }
@@ -166,7 +173,7 @@ body {
 }
 .cloud > p:nth-child(2) {
   align-self: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #5c5b5b;
   font-weight: bold;
 }
@@ -174,6 +181,7 @@ body {
   padding: 0px 12px;
   text-align: center;
   font-size: 13px;
+  line-height: 15px;
 }
 /* color classes */
 .color-blue {
@@ -256,8 +264,6 @@ body {
 .members img {
   justify-content: flex-start;
   align-self: center;
-  width: 34%;
-  height: 69%;
   border-radius: 100%;
 }
 .members span {
@@ -294,68 +300,61 @@ body {
 /* end of team section */
 /* contact section */
 .contact {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 105vh;
+  padding: 100px 0;
   background-color: #3cadd4;
-  color: #fff;
-  align-items: center;
+  color: #ffffff;
 }
 .header-txt {
   text-align: center;
-  font-weight: 300;
-  font-size: 18px;
-  padding: 50px 0px;
+  margin-bottom: 80px;
 }
 .header-txt > h2 {
   font-weight: 800;
-  padding: 10px 0px;
-  font-size: 35px;
+  padding: 20px 0px;
+  font-size: 40px;
+}
+.header-txt p {
+  font-size: 20px;
 }
 .contact-inp {
-  width: 55%;
-  height: 45%;
-  color: #444;
-}
-.contact-inp > input {
-  margin: 0px 5px;
-  padding: 0px 10px;
-  width: 45%;
-  height: 15%;
-  border: none;
-  border-radius: 5px;
-  background: #ffffff;
-}
-.comment {
-  padding: 20px 5px;
-  color: #383b43;
-}
-.comment > textarea {
-  padding: 5px 16px;
-  font-family:inherit;
-  border-radius: 6px;
-}
-.contact a:last-of-type{
-  width:17%;
-  height: 9%;
-  border-radius: 20px;
   text-align: center;
-  padding: 12px 0;
+}
+input[type="text"],
+input[type="email"] {
+  background-color: #fff;
+  color: #444;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 11px;
+  width: 25%;
+}
+textarea {
+  background-color: #fff;
+  color: #444;
+  border: none;
+  border-radius: 4px;
+  height: 200px;
+  padding: 15px 25px;
+  width: 50%;
+  margin-top: 20px;
+}
+.contact-inp button {
+  margin-top: 20px;
 }
 /* end of contact section */
 /* footer section */
-.footer{
+.footer {
   background-color: #444;
   width: 100%;
   height: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}.footer ul{
+}
+.footer ul {
   align-self: center;
 }
-.footer ul li{
+.footer ul li {
   display: inline-block;
   padding: 0 10px;
   font-size: 14px;

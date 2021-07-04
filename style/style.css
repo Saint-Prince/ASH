@@ -1,16 +1,11 @@
 /* ASH Theme css file  */
 /* General style */
 @import url("font-awesome.min.css ");
-
+@import url("animation.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* a tag general style */
-a {
-  text-decoration: none;
-  color: #fff;
 }
 /* Raleway font section */
 @font-face {
@@ -23,6 +18,11 @@ a {
   font-family: "Helvetica";
   src: url("../fonts/Helvetica.ttf");
   font-weight: 500;
+}
+/* a tag general style */
+a {
+  text-decoration: none;
+  color: #fff;
 }
 /* body section */
 body {
@@ -37,14 +37,10 @@ body {
   background-size: cover;
 }
 .top-menu {
-  width: 100%;
-  height: 100px;
   padding: 40px;
 }
-.top-menu > h2 {
-  color: #fff;
+.top-menu > h1 {
   float: left;
-  padding: 5px 0px;
 }
 .nav-menu {
   text-align: right;
@@ -58,51 +54,60 @@ body {
   transition: color 0.3s ease-in-out;
 }
 .btn {
-  padding: 9px 25px;
+  padding: 10px 15px;
   border-radius: 30px;
-  border: 0;
-  color: #ffffff;
-  cursor: pointer;
-  text-align: center;
   font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+/* nav menu hover */
+.nav-menu ul li a:hover {
+  color: #ffffff;
 }
 .btn-gray {
   background-color: #fff;
   color: #444 !important;
 }
-
 .btn-blue {
   background-color: #3cadd4;
   color: #fff !important;
 }
-
 .btn-dark {
   background-color: #383b43;
   color: #ffffff !important;
 }
-
 .btn-big {
   font-size: 20px !important;
   padding: 17px 35px;
-}
-
-/* nav menu hover */
-.nav-menu ul li a:hover {
-  color: #ffffff;
 }
 /* end of nav menu */
 /* banner content Section */
 .banner-content {
   text-align: center;
   padding: 90px 0px;
+  animation: fadeInLeftBig 1s ease 0s alternate forwards;
 }
-.banner-text {
+.banner-content h2 {
   line-height: 130px;
   font-size: 60px;
   color: #fff;
   font-weight: bold;
 }
-.banner-text ~ p {
+/* main title(h2) animation */
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    color: red;
+    opacity: 1;
+    transform: none;
+  }
+}
+.banner-content p {
   color: #fff;
   font-size: 22px;
 }
@@ -341,7 +346,7 @@ textarea {
   margin-top: 20px;
 }
 ::placeholder {
-  color: #858585!important;
+  color: #858585 !important;
   font-size: 15px;
   font-family: "Raleway";
 }
